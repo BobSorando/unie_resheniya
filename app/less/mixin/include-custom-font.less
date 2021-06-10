@@ -1,0 +1,11 @@
+.include-custom-font(@family: arial, @fileName: @family, @weight: normal, @dir, @style: normal){
+	@font-face{
+			font-family: @family;
+			src: url('../fonts/@{dir}/@{fileName}.woff') format('woff'),
+					 url('../fonts/@{dir}/@{fileName}.eot') format('eot');
+			font-weight: @weight;
+			font-style: @style;
+			//font-display: swap;
+	}
+}
+
